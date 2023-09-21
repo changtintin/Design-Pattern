@@ -1,8 +1,8 @@
 package ObservePattern.DisplayPkg;
 
 import ObservePattern.DisplayElement;
-import ObservePattern.ObserverPkg.Observer;
-import ObservePattern.SubjectPkg.Subject;
+import ObservePattern.ObserverPkg.*;
+import ObservePattern.SubjectPkg.*;
 
 public class ForecastDisplay implements Observer, DisplayElement {
     private float temperature;
@@ -21,6 +21,6 @@ public class ForecastDisplay implements Observer, DisplayElement {
     }
 
     public void display(){
-        System.out.println("Current conditions: " + temperature + "degree \n Humidity:" + humidity );
+        System.out.println("Tomorrow Weather : " + temperature + " degree / Humidity:" + humidity );
     }    
 }

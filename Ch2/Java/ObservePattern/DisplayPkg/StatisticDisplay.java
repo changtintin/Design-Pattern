@@ -3,25 +3,38 @@ package ObservePattern.DisplayPkg;
 import ObservePattern.DisplayElement;
 import ObservePattern.ObserverPkg.Observer;
 import ObservePattern.SubjectPkg.Subject;
-
-public class StatisticDisplay implements Observer, DisplayElement{
-    private float temperature;
-    private float humidity;
-    private Subject weatherData;
+import ObservePattern.SubjectPkg.WeatherData;
 
 
-    public  StatisticDisplay(Subject weatherData){
-        this.weatherData = weatherData;
-        weatherData.registerObservers(this);
-    }
+public class StatisticDisplay implements Observer, DisplayElement {
+	private float maxTemp = 0.0f;
+	private float minTemp = 200;
+	private float tempSum= 0.0f;
+	private int numReadings;
+	private WeatherData weatherData;
 
-    public void update(float temperature, float humidity, float pressure){
-        this.temperature = temperature;
-        this.humidity = humidity;
-        display();
-    }
+	public StatisticDisplay(WeatherData weatherData) {
+		this.weatherData = weatherData;
+		weatherData.registerObservers(this);
+	}
 
-    public void display(){
-        System.out.println("Current conditions: " + temperature + "degree \n Humidity:" + humidity );
-    }    
+	public void update(float temp, float humidity, float pressure) {
+		tempSum += temp;
+		numReadings++;
+
+		if (temp > maxTemp) {
+			maxTemp = temp;
+		}
+ 
+		if (temp < minTemp) {
+			minTemp = temp;
+		}
+
+		display();
+	}
+
+	public void display() {
+		System.out.println("Avg/Max/Min temperature = " + (tempSum / numReadings)
+			+ "/" + maxTemp + "/" + minTemp);
+	}
 }
