@@ -1,8 +1,8 @@
-package ObservePattern.DisplayPkg;
+package weatherObserver.ObservePattern.DisplayPkg;
 
-import ObservePattern.DisplayElement;
-import ObservePattern.ObserverPkg.*;
-import ObservePattern.SubjectPkg.*;
+import weatherObserver.ObservePattern.DisplayElement;
+import weatherObserver.ObservePattern.ObserverPkg.*;
+import weatherObserver.ObservePattern.SubjectPkg.*;
 
 public class ForecastDisplay implements Observer, DisplayElement {
     private float temperature;

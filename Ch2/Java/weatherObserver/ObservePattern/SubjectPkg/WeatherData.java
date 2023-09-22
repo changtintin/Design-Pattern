@@ -1,7 +1,7 @@
-package ObservePattern.SubjectPkg;
+package weatherObserver.ObservePattern.SubjectPkg;
 import java.util.ArrayList;
 
-import ObservePattern.ObserverPkg.Observer;
+import weatherObserver.ObservePattern.ObserverPkg.Observer;
 
 public class WeatherData implements Subject{
     private ArrayList<Observer> observers;

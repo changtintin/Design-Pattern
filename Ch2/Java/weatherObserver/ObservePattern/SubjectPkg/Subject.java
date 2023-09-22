@@ -1,5 +1,5 @@
-package  ObservePattern.SubjectPkg;
-import ObservePattern.ObserverPkg.Observer;
+package  weatherObserver.ObservePattern.SubjectPkg;
+import weatherObserver.ObservePattern.ObserverPkg.Observer;
 
 public interface Subject{
     public void registerObservers(Observer obr);

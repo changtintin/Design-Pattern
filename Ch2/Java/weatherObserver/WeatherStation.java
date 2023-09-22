@@ -1,11 +1,11 @@
-package Ch2.Java;
+package weatherObserver;
 import java.util.ArrayList;
 
-import ObservePattern.DisplayPkg.CurrentConditionDisplay;
-import ObservePattern.DisplayPkg.ForecastDisplay;
-import ObservePattern.DisplayPkg.StatisticDisplay;
-import ObservePattern.SubjectPkg.Subject;
-import ObservePattern.SubjectPkg.WeatherData;
+import weatherObserver.ObservePattern.DisplayPkg.CurrentConditionDisplay;
+import weatherObserver.ObservePattern.DisplayPkg.ForecastDisplay;
+import weatherObserver.ObservePattern.DisplayPkg.StatisticDisplay;
+import weatherObserver.ObservePattern.SubjectPkg.Subject;
+import weatherObserver.ObservePattern.SubjectPkg.WeatherData;
 
 public class WeatherStation{
     public static void main(String[] string){

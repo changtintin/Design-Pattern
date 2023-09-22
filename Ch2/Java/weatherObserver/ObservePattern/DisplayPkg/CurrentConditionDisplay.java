@@ -1,8 +1,8 @@
-package ObservePattern.DisplayPkg;
+package weatherObserver.ObservePattern.DisplayPkg;
 
-import ObservePattern.DisplayElement;
-import ObservePattern.ObserverPkg.Observer;
-import ObservePattern.SubjectPkg.Subject;
+import weatherObserver.ObservePattern.DisplayElement;
+import weatherObserver.ObservePattern.ObserverPkg.Observer;
+import weatherObserver.ObservePattern.SubjectPkg.Subject;
 
 public class CurrentConditionDisplay implements Observer, DisplayElement {
     private float temperature;

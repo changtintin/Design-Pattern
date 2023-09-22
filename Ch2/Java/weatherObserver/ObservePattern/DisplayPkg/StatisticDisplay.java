@@ -1,9 +1,9 @@
-package ObservePattern.DisplayPkg;
+package weatherObserver.ObservePattern.DisplayPkg;
 
-import ObservePattern.DisplayElement;
-import ObservePattern.ObserverPkg.Observer;
-import ObservePattern.SubjectPkg.Subject;
-import ObservePattern.SubjectPkg.WeatherData;
+import weatherObserver.ObservePattern.DisplayElement;
+import weatherObserver.ObservePattern.ObserverPkg.Observer;
+import weatherObserver.ObservePattern.SubjectPkg.Subject;
+import weatherObserver.ObservePattern.SubjectPkg.WeatherData;
 
 
 public class StatisticDisplay implements Observer, DisplayElement {
