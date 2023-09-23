@@ -13,7 +13,7 @@ public class Button {
         }
     } 
 
-    public void pressBtn(){
+    public void pressBtn() {
         System.out.println("Should I do it?");
 
         Random rand = new Random();
