@@ -12,6 +12,7 @@ public class orderSystem {
 
         Beverage secDrink = new DarkRoast();
         secDrink = new Mocha(secDrink);
+        secDrink = new Mocha(secDrink);
         secDrink = new Strawberry(secDrink);
         secDrink = new Milk(secDrink);
 
