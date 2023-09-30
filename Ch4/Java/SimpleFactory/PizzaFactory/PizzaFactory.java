@@ -12,7 +12,7 @@ public class PizzaFactory {
             pizza = new Pepperoni();
         }
         else{
-            pizza = new Seafood();
+            pizza = new Veggies();
         }
         return pizza;
     }
