@@ -6,11 +6,11 @@ public class Light extends Receiver{
     public Light(String position){
         this.position = position;
     }
-    public void On(){
+    public void on(){
         System.out.println("Turn on the light in " + position );
     }
 
-    public void Off(){
-        System.out.println("Turn on the light in " + position );
+    public void off(){
+        System.out.println("Turn off the light in " + position );
     }   
 }

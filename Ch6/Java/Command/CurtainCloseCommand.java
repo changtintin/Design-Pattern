@@ -11,4 +11,8 @@ public class CurtainCloseCommand implements Command{
     public void execute(){        
         curtain.close();
     }
+
+    public void undo(){
+        curtain.open();
+    }
 }

@@ -1,6 +1,5 @@
 package Ch6.Java.CommandPattern;
 
-import Ch6.Java.Command.CurtainOpenCommand;
 import Ch6.Java.Command.*;
 import Ch6.Java.Invoker.*;
 import Ch6.Java.Receiver.*;
@@ -31,15 +30,21 @@ public class CommandPattern {
         FridgeOpenCommand kitchenFridgeOpenCommand = new FridgeOpenCommand(kitchenFridge);
         FridgeCloseCommand kitchenFridgeOffCommand = new FridgeCloseCommand(kitchenFridge);
 
+        System.out.println(remote);
+
         remote.setCommand(1, livingroomCurtainOpen, livingroomCurtainClose);
         remote.setCommand(2, livingroomLightOnCommand, livingroomLightOffCommand);
         remote.setCommand(3, kitchenFridgeOpenCommand, kitchenFridgeOffCommand);
         remote.setCommand(4, bedroomCurtainOpen, bedroomCurtainClose);
         remote.setCommand(5, studioLightOnCommand, studioLightOffCommand);
 
+        System.out.println(remote);
+
         remote.pressOffBtn(4);
+        remote.pressOnBtn(5);       
+        remote.pressUndoBtn();
         remote.pressOnBtn(5);
         remote.pressOnBtn(1);
-        remote.pressOnBtn(3);
+        remote.pressOffBtn(7);
     }
 }

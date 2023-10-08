@@ -11,4 +11,8 @@ public class CurtainOpenCommand implements Command{
     public void execute(){        
         curtain.open();
     }
+
+    public void undo(){
+        curtain.close();
+    }
 }

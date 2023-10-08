@@ -11,4 +11,8 @@ public class FridgeCloseCommand implements Command{
     public void execute(){        
         fridge.close();
     }
+
+    public void undo(){
+        fridge.open();
+    }
 }

@@ -10,6 +10,10 @@ public class LightOnCommand implements Command{
     }
 
     public void execute(){        
-        light.On();
+        light.on();
+    }
+
+    public void undo(){
+        light.off();
     }
 }
