@@ -2,7 +2,6 @@ package Ch6.Java.Invoker;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
 import Ch6.Java.Command.Command;
 import Ch6.Java.Command.NoCommand;
 
